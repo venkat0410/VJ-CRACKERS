@@ -1,0 +1,1204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fireworks Product List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f9f9f9;
+        }
+        .centered {
+            text-align: center;
+        }
+
+        .invoice-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        .invoice-table th, .invoice-table td {
+            border: 1px solid #000;
+            padding: 8px;
+            text-align: left;
+        }
+
+        .invoice-table th {
+            background-color: #d3e5ff;
+            color: #000;
+            font-weight: bold;
+        }
+
+        .invoice-table tbody tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        .total-row {
+            font-weight: bold;
+            background-color: #c1ffc1;
+        }
+
+        .section-title {
+            background-color: #3f83f8;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .tamil-name {
+            color: #505050;
+            font-style: italic;
+        }
+
+        input[type="number"] {
+            width: 80px;
+        }
+    </style>
+</head>
+<body>
+
+    <table class="invoice-table">
+        <thead>
+            <div class="centered">
+                <h1>VIJAY CRACKERS</h1>
+                <h2><span>Contact: 9677376335 / 9047105153 / 8072571652</span></h2>
+            </div>
+            
+            <tr>
+                <th>Sl. No.</th>
+                <th>Name Of The Products</th>
+                <th class="tamil-name">பட்டாசின் பெயர்</th>
+                <th>Per</th>
+                <th>Net Rate</th>
+                <th>Requirement</th>
+                <th>Amount</th>
+            </tr>
+            <tr>
+                <th>🔥🔥</th>
+                <th>Flash Light Crackers</th>
+                <th class="tamil-name">ஃப்ளாஷ் லைட் பட்டாசுகள்</th>
+                <th>🔥🔥</th>
+                <th>  </th>
+                <th>  </th>
+                <th>  </th>
+            </tr>
+            
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Flash Light Crackers</td>
+                <td class="tamil-name">ப்ளாஷ் லைட் கிராக்கர்ஸ்</td>
+                <td>1 Pkt</td>
+                <td>8</td>
+                <td><input type="number" min="0" value="0" onchange="calculateAmount(this)"></td>
+                <td class="amount">0</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>2 3/4" Bird Crackers</td>
+                <td class="tamil-name">2 3/4" பறவை கிராக்கர்ஸ்</td>
+                <td>1 Pkt</td>
+                <td>16</td>
+                <td><input type="number" min="0" value="0" onchange="calculateAmount(this)"></td>
+                <td class="amount">0</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>3" Lakshmi Crackers</td>
+                <td class="tamil-name">3" லட்சுமி வெடி</td>
+                <td>1 Pkt</td>
+                <td>22</td>
+                <td><input type="number" min="0" value="0" onchange="calculateAmount(this)"></td>
+                <td class="amount">0</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>4" Deluxe Lakshmi Cracker</td>
+                <td class="tamil-name">4" டீலக்ஸ் லட்சுமி வெடி</td>
+                <td>1 Pkt</td>
+                <td>25</td>
+                <td><input type="number" min="0" value="0" onchange="calculateAmount(this)"></td>
+                <td class="amount">0</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Gold Lakshmi</td>
+                <td class="tamil-name">கோல்டு வட்சுமி</td>
+                <td>1 Pkt</td>
+                <td>35</td>
+                <td><input type="number" min="0" value="0" onchange="calculateAmount(this)"></td>
+                <td class="amount">0</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>5" Deluxe Crackers</td>
+                <td class="tamil-name">5" டீலக்ஸ் கிராக்கர்ஸ்</td>
+                <td>1 Pkt</td>
+                <td>45</td>
+                <td><input type="number" min="0" value="0" onchange="calculateAmount(this)"></td>
+                <td class="amount">0</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>6" Deluxe Crackers</td>
+                <td class="tamil-name">6" டீலக்ஸ் கிராக்கர்ஸ்</td>
+                <td>1 Pkt</td>
+                <td>55</td>
+                <td><input type="number" min="0" value="0" onchange="calculateAmount(this)"></td>
+                <td class="amount">0</td>
+            </tr>
+            
+            <tr>
+                <th>🔥🔥</th>
+                <th>GROUND CHAKKAR</th>
+                <th class="tamil-name">தரை சக்கரம்</th>
+                <th>🔥🔥</th>
+                <th>  </th>
+                <th>  </th>
+                <th>  </th>
+            </tr>
+            
+            <tr>
+                <td>8</td>
+                <td>Ground Chakkar Big (10 pcs)</td>
+                <td class="tamil-name">தரை சக்கரம் பெரியது (10)</td>
+                <td>1 Box</td>
+                <td>35</td>
+                <td><input type="number" min="0" value="0" onchange="calculateAmount(this)"></td>
+                <td class="amount">0</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>Ground Chakkar Big (25 pcs)</td>
+                <td class="tamil-name">தரை சக்கரம் பெரியது(25)</td>
+                <td>1 Box</td>
+                <td>80</td>
+                <td><input type="number" min="0" value="0" onchange="calculateAmount(this)"></td>
+                <td class="amount">0</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>Ground Chakkar Asoka</td>
+                <td class="tamil-name">தரை சக்கரம் அசோகா</td>
+                <td>1 Box</td>
+                <td>45</td>
+                <td><input type="number" min="0" value="0" onchange="calculateAmount(this)"></td>
+                <td class="amount">0</td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td>Ground Chakkar Special</td>
+                <td class="tamil-name">தரை சக்கரம் ஸ்பெஷல்</td>
+                <td>1 Box</td>
+                <td>80</td>
+                <td><input type="number" min="0" value="0" onchange="calculateAmount(this)"></td>
+                <td class="amount">0</td>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td>Ground Chakkar Deluxe</td>
+                <td class="tamil-name">தரை சக்கரம் டீலக்ஸ்</td>
+                <td>1 Box</td>
+                <td>130</td>
+                <td><input type="number" min="0" value="0" onchange="calculateAmount(this)"></td>
+                <td class="amount">0</td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>Whistling Wheel</td>
+                <td class="tamil-name">விசிலிங் சக்கரம்</td>
+                <td>1 Box</td>
+                <td>125</td>
+                <td><input type="number" min="0" value="0" onchange="calculateAmount(this)"></td>
+                <td class="amount">0</td>
+            </tr>
+            <tr>
+                <td>14</td>
+                <td>Kuppi Special</td>
+                <td class="tamil-name">குப்பி ஸ்பெஷல்</td>
+                <td>1 Box</td>
+                <td>100</td>
+                <td><input type="number" min="0" value="0" onchange="calculateAmount(this)"></td>
+                <td class="amount">0</td>
+            </tr>
+            <tr>
+                <td>15</td>
+                <td>Kuppi Deluxe</td>
+                <td class="tamil-name">குப்பி டீலக்ஸ்</td>
+                <td>1 Box</td>
+                <td>130</td>
+                <td><input type="number" min="0" value="0" onchange="calculateAmount(this)"></td>
+                <td class="amount">0</td>
+            </tr>
+            <tr>
+                <th>🔥🔥</th>
+                <th>FLOWER POTS</th>
+                <th class="tamil-name">பூச்சட்டி</th>
+                <th>🔥🔥</th>
+                <th>  </th>
+                <th>  </th>
+                <th>  </th>
+            </tr>
+            <tr>
+                <td>16</td>
+                <td>Flower Pots Small</td>
+                <td class="tamil-name">பூச்சட்டி சிறியது</td>
+                <td>1 Box</td>
+                <td>45</td>
+                <td><input type="number" min="0" value="0" onchange="calculateAmount(this)"></td>
+                <td class="amount">0</td>
+            </tr>
+            <tr>
+                <td>17</td>
+                <td>Flower Pots Big</td>
+                <td class="tamil-name">பூச்சட்டி பெரியது</td>
+                <td>1 Box</td>
+                <td>70</td>
+                <td><input type="number" min="0" value="0" onchange="calculateAmount(this)"></td>
+                <td class="amount">0</td>
+            </tr>
+            <tr>
+                <td>18</td>
+                <td>Flower Pots Special</td>
+                <td class="tamil-name">பூச்சட்டி ஸ்பெஷல்</td>
+                <td>1 Box</td>
+                <td>90</td>
+                <td><input type="number" min="0" value="0" onchange="calculateAmount(this)"></td>
+                <td class="amount">0</td>
+            </tr>
+            <tr>
+                <td>19</td>
+                <td>Flower Pots Asoka</td>
+                <td class="tamil-name">பூச்சட்டி அசோகா</td>
+                <td>1 Box</td>
+                <td>110</td>
+                <td><input type="number" min="0" value="0" onchange="calculateAmount(this)"></td>
+                <td class="amount">0</td>
+            </tr>
+            <tr>
+                <td>20</td>
+                <td>Flower Pots Giant</td>
+                <td class="tamil-name">பூச்சட்டி ஜெயிண்ட்</td>
+                <td>1 Box</td>
+                <td>130</td>
+                <td><input type="number" min="0" value="0" onchange="calculateAmount(this)"></td>
+                <td class="amount">0</td>
+            </tr>
+            <tr>
+                <td>21</td>
+                <td>Flower Pots Deluxe (5 Pcs)</td>
+                <td class="tamil-name">பூச்சட்டி டீலக்ஸ் (5)</td>
+                <td>1 Box</td>
+                <td>150</td>
+                <td><input type="number" min="0" value="0" onchange="calculateAmount(this)"></td>
+                <td class="amount">0</td>
+            </tr>
+            <tr>
+                <td>22</td>
+                <td>Flower Pots S.Deluxe (2 Pcs)</td>
+                <td class="tamil-name">பூச்சட்டி சூப்பர் டீலக்ஸ் (2)</td>
+                <td>1 Box</td>
+                <td>90</td>
+                <td><input type="number" min="0" value="0" onchange="calculateAmount(this)"></td>
+                <td class="amount">0</td>
+            </tr>
+            <tr>
+                <td>23</td>
+                <td>Colour Koti</td>
+                <td class="tamil-name">கலர் கோட்டி</td>
+                <td>1 Box</td>
+                <td>190</td>
+                <td><input type="number" min="0" value="0" onchange="calculateAmount(this)"></td>
+                <td class="amount">0</td>
+            </tr>
+            <tr>
+                <td>24</td>
+                <td>Tri Colour</td>
+                <td class="tamil-name">ட்ரீ கலர்</td>
+                <td>1 Box</td>
+                <td>250</td>
+                <td><input type="number" min="0" value="0" onchange="calculateAmount(this)"></td>
+                <td class="amount">0</td>
+            </tr>
+            <tr></tr>
+                <td>25</td>
+                <td>Deluxe Colour Koti</td>
+                <td class="tamil-name">டீலக்ஸ் கலர் கோடி</td>
+                <td>1 Box</td>
+                <td>250</td>
+                <td><input type="number" min="0" value="0" onchange="calculateAmount(this)"></td>
+                <td class="amount">0</td>
+            </tr>
+            <tr>
+                <th>🔥🔥</th>
+                <th>TWINKLING STAR</th>
+                <th class="tamil-name">சாட்டை</th>
+                <th>🔥🔥</th>
+                <th>  </th>
+                <th>  </th>
+                <th>  </th>
+            </tr>
+            <tr>
+                <td>26</td>
+                <td>1 1/2" Twinkling Star</td>
+                <td class="tamil-name">1 1/2" வெள்ளி சாட்டை</td>
+                <td>1 Box</td>
+                <td>30</td>
+                <td><input type="number" min="0" value="0" onchange="calculateAmount(this)"></td>
+                <td class="amount">0</td>
+            </tr>
+            <tr>
+                <td>27</td>
+                <td>4 Twinkling Star</td>
+                <td class="tamil-name">4 வெள்ளி சாட்டை</td>
+                <td>1 Box</td>
+                <td>60</td>
+                <td><input type="number" min="0" value="0" onchange="calculateAmount(this)"></td>
+                <td class="amount">0</td>
+            </tr>
+            <tr>
+                <th>🔥🔥</th>
+                <th>PENCIL</th>
+                <th class="tamil-name">பென்சில்</th>
+                <th>🔥🔥</th>
+                <th>  </th>
+                <th>  </th>
+                <th>  </th>
+            </tr>
+            <tr>
+                <td>28</td>
+                <td>Ultra Pencil (3 Pcs)</td>
+                <td class="tamil-name">அல்ட்ரா பென்சில் (3)</td>
+                <td>1 Box</td>
+                <td>65</td>
+                <td><input type="number" min="0" value="0" onchange="calculateAmount(this)"></td>
+                <td class="amount">0</td>
+            </tr>
+            <tr>
+                <td>29</td>
+                <td>Navarang Pencil (5 Pcs)</td>
+                <td class="tamil-name">நவரங் பென்சில் (5)</td>
+                <td>1 Box</td>
+                <td>125</td>
+                <td><input type="number" min="0" value="0" onchange="calculateAmount(this)"></td>
+                <td class="amount">0</td>
+            </tr>
+            <tr>
+                <td>30</td>
+                <td>Water Falls (5 Pcs)</td>
+                <td class="tamil-name">வாட்டர் பால்ஸ் (5)</td>
+                <td>1 Box</td>
+                <td>200</td>
+                <td><input type="number" min="0" value="0" onchange="calculateAmount(this)"></td>
+                <td class="amount">0</td>
+            </tr>
+            <tr>
+                <td>31</td>
+                <td>Popcorn (5 Pcs)</td>
+                <td class="tamil-name">பாப்கார்ன் (5)</td>
+                <td>1 Box</td>
+                <td>200</td>
+                <td><input type="number" min="0" value="0" onchange="calculateAmount(this)"></td>
+                <td class="amount">0</td>
+            </tr>
+            <tr>
+                <th>🔥🔥</th>
+                <th>Bijili Crackers</th>
+                <th class="tamil-name">பிஜிலி கிராக்கர்ஸ்</th>
+                <th>🔥🔥</th>
+                <th>  </th>
+                <th>  </th>
+                <th>  </th>
+            </tr>
+
+            <tr>
+                <td>32</td>
+                <td>Bijili Red Crackers</td>
+                <td class="tamil-name">பிஜிலி சிவப்பு பட்டாசுகள்</td>
+                <td>1 Packet</td>
+                <td>45</td>
+                <td><input type="number" min="0" value="0" onchange="calculateAmount(this)"></td>
+                <td class="amount">0</td>
+            </tr>
+            <tr>
+                <td>33</td>
+                <td>Bijili Stripped Crackers</td>
+                <td class="tamil-name">வரி பிஜிலி பட்டாசுகள்</td>
+                <td>1 Packet</td>
+                <td></td>
+                <td><input type="number" min="0" value="0" onchange="calculateAmount(this)"></td>
+                <td class="amount">0</td>
+            </tr>
+            <tr></tr>
+                <th>🔥🔥</th>
+                <th>BOMBS</th>
+                <th class="tamil-name">அணுகுண்டு</th>
+                <th>🔥🔥</th>
+                <th>  </th>
+                <th>  </th>
+                <th>  </th>
+            </tr>
+
+            <tr>
+                <td>34</td>
+                <td>Hydro Bomb</td>
+                <td class="tamil-name">ஹைட்ரோ பாம்</td>
+                <td>1 Box</td>
+                <td>65</td>
+                <td><input type="number" min="0" value="0" onchange="calculateAmount(this)"></td>
+                <td class="amount">0</td>
+            </tr>
+            <tr>
+                <td>35</td>
+                <td>King Of King</td>
+                <td class="tamil-name">கிங் ஆப் கிங்</td>
+                <td>1 Box</td>
+                <td>90</td>
+                <td><input type="number" min="0" value="0" onchange="calculateAmount(this)"></td>
+                <td class="amount">0</td>
+            </tr>
+            <tr>
+                <td>36</td>
+                <td>Classic Bomb</td>
+                <td class="tamil-name">கிளாசிக் பாம்</td>
+                <td>1 Box</td>
+                <td>110</td>
+                <td><input type="number" min="0" value="0" onchange="calculateAmount(this)"></td>
+                <td class="amount">0</td>
+            </tr>
+            <tr>
+                <td>37</td>
+                <td>Terror Bomb</td>
+                <td class="tamil-name">டெரர் பாம்</td>
+                <td>1 Box</td>
+                <td>160</td>
+                <td><input type="number" min="0" value="0" onchange="calculateAmount(this)"></td>
+                <td class="amount">0</td>
+            </tr>
+
+            </tr>
+                <th>🔥🔥</th>
+                <th>ROCKET</th>
+                <th class="tamil-name">ராக்கெட்</th>
+                <th>🔥🔥</th>
+                <th>  </th>
+                <th>  </th>
+                <th>  </th>
+            </tr>
+            <tr>
+                <td>38</td>
+                <td>Whistling Jet (10 Pcs)</td>
+                <td class="tamil-name">விசிலிங் ஜெட் (10)</td>
+                <td>1 Box</td>
+                <td>150</td>
+                <td><input type="number" min="0" value="0" onchange="calculateAmount(this)"></td>
+                <td class="amount">0</td>
+            </tr>
+            </tr>
+            <th>🔥🔥</th>
+            <th>SPARKLERS</th>
+            <th class="tamil-name">ஸ்பார்க்ளர்ஸ்</th>
+            <th>🔥🔥</th>
+            <th>  </th>
+            <th>  </th>
+            <th>  </th>
+            </tr>
+
+            <tr>
+                <td>39</td>
+                <td>7cm Electric Sparklers</td>
+                <td class="tamil-name">7cm எலக்ட்ரிக் ஸ்பார்க்ளர்ஸ்</td>
+                <td>1 Box</td>
+                <td>8</td>
+                <td><input type="number" min="0" value="0" onchange="calculateAmount(this)"></td>
+                <td class="amount">0</td>
+            </tr>
+            <tr>
+                <td>40</td>
+                <td>7cm Colour Sparklers</td>
+                <td class="tamil-name">7cm கலர் ஸ்பார்க்ளர்ஸ்</td>
+                <td>1 Box</td>
+                <td>10</td>
+                <td><input type="number" min="0" value="0" onchange="calculateAmount(this)"></td>
+                <td class="amount">0</td>
+            </tr>
+            <tr>
+                <td>41</td>
+                <td>7cm Green Sparklers</td>
+                <td class="tamil-name">7cm கிரீன் ஸ்பார்க்ளர்ஸ்</td>
+                <td>1 Box</td>
+                <td>15</td>
+                <td><input type="number" min="0" value="0" onchange="calculateAmount(this)"></td>
+                <td class="amount">0</td>
+            </tr>
+            <tr>
+                <td>42</td>
+                <td>7cm Red Sparklers</td>
+                <td class="tamil-name">7cm ரெட் ஸ்பார்க்ளர்ஸ்</td>
+                <td>1 Box</td>
+                <td>20</td>
+                <td><input type="number" min="0" value="0" onchange="calculateAmount(this)"></td>
+                <td class="amount">0</td>
+            </tr>
+            <tr>
+                <td>43</td>
+                <td>10cm Electric Sparklers</td>
+                <td class="tamil-name">10cm எலக்ட்ரிக் ஸ்பார்க்ளர்ஸ்</td>
+                <td>1 Box</td>
+                <td>25</td>
+                <td><input type="number" min="0" value="0" onchange="calculateAmount(this)"></td>
+                <td class="amount">0</td>
+            </tr>
+            <tr>
+                <td>44</td>
+                <td>10cm Colour Sparklers</td>
+                <td class="tamil-name">10cm கலர் ஸ்பார்க்ளர்ஸ்</td>
+                <td>1 Box</td>
+                <td>27</td>
+                <td><input type="number" min="0" value="0" onchange="calculateAmount(this)"></td>
+                <td class="amount">0</td>
+            </tr>
+            <tr>
+                <td>45</td>
+                <td>10cm Green Sparklers</td>
+                <td class="tamil-name">10cm கிரீன் ஸ்பார்க்ளர்ஸ்</td>
+                <td>1 Box</td>
+                <td>30</td>
+                <td><input type="number" min="0" value="0" onchange="calculateAmount(this)"></td>
+                <td class="amount">0</td>
+            </tr>
+            <tr>
+                <td>46</td>
+                <td>10cm Red Sparklers</td>
+                <td class="tamil-name">10cm ரெட் ஸ்பார்க்ளர்ஸ்</td>
+                <td>1 Box</td>
+                <td>35</td>
+                <td><input type="number" min="0" value="0" onchange="calculateAmount(this)"></td>
+                <td class="amount">0</td>
+            </tr>
+            <tr>
+                <td>47</td>
+                <td>12cm Electric Sparklers</td>
+                <td class="tamil-name">12cm எலக்ட்ரிக் ஸ்பார்க்ளர்ஸ்</td>
+                <td>1 Box</td>
+                <td>33</td>
+                <td><input type="number" min="0" value="0" onchange="calculateAmount(this)"></td>
+                <td class="amount">0</td>
+            </tr>
+            <tr>
+                <td>48</td>
+                <td>12cm Colour Sparklers</td>
+                <td class="tamil-name">12cm கலர் ஸ்பார்க்ளர்ஸ்</td>
+                <td>1 Box</td>
+                <td>35</td>
+                <td><input type="number" min="0" value="0" onchange="calculateAmount(this)"></td>
+                <td class="amount">0</td>
+            </tr>
+            <tr>
+                <td>49</td>
+                <td>12cm Green Sparklers</td>
+                <td class="tamil-name">12cm கிரீன் ஸ்பார்க்ளர்ஸ்</td>
+                <td>1 Box</td>
+                <td>38</td>
+                <td><input type="number" min="0" value="0" onchange="calculateAmount(this)"></td>
+                <td class="amount">0</td>
+            </tr>
+            <tr>
+                <td>50</td>
+                <td>12cm Red Sparklers</td>
+                <td class="tamil-name">12cm ரெட் ஸ்பார்க்ளர்ஸ்</td>
+                <td>1 Box</td>
+                <td>40</td>
+                <td><input type="number" min="0" value="0" onchange="calculateAmount(this)"></td>
+                <td class="amount">0</td>
+            </tr>
+            <tr>
+                <td>51</td>
+                <td>15cm Electric Sparklers</td>
+                <td class="tamil-name">15cm எலக்ட்ரிக் ஸ்பார்க்ளர்ஸ்</td>
+                <td>1 Box</td>
+                <td>45</td>
+                <td><input type="number" min="0" value="0" onchange="calculateAmount(this)"></td>
+                <td class="amount">0</td>
+            </tr>
+            <tr>
+                <td>52</td>
+                <td>15cm Colour Sparklers</td>
+                <td class="tamil-name">15cm கலர் ஸ்பார்க்ளர்ஸ்</td>
+                <td>1 Box</td>
+                <td>48</td>
+                <td><input type="number" min="0" value="0" onchange="calculateAmount(this)"></td>
+                <td class="amount">0</td>
+            </tr>
+            
+            <tr>
+                <td>53</td>
+                <td>15cm Green Sparklers</td>
+                <td class="tamil-name">15cm கிரீன் ஸ்பார்க்ளர்ஸ்</td>
+                <td>1 Box</td>
+                <td>50</td>
+                <td><input type="number" min="0" value="0" onchange="calculateAmount(this)"></td>
+                <td class="amount">0</td>
+            </tr>
+            <tr>
+                <td>54</td>
+                <td>15cm Red Sparklers</td>
+                <td class="tamil-name">15cm ரெட் ஸ்பார்க்ளர்ஸ்</td>
+                <td>1 Box</td>
+                <td>55</td>
+                <td><input type="number" min="0" value="0" onchange="calculateAmount(this)"></td>
+                <td class="amount">0</td>
+            </tr>
+            <tr>
+                <td>55</td>
+                <td>30cm Electric Sparklers</td>
+                <td class="tamil-name">30cm எலக்ட்ரிக் ஸ்பார்க்ளர்ஸ்</td>
+                <td>1 Box</td>
+                <td>50</td>
+                <td><input type="number" min="0" value="0" onchange="calculateAmount(this)"></td>
+                <td class="amount">0</td>
+            </tr>
+            <tr>
+                <td>56</td>
+                <td>30cm Colour Sparklers</td>
+                <td class="tamil-name">30cm கலர் ஸ்பார்க்ளர்ஸ்</td>
+                <td>1 Box</td>
+                <td>54</td>
+                <td><input type="number" min="0" value="0" onchange="calculateAmount(this)"></td>
+                <td class="amount">0</td>
+            </tr>
+            <tr>
+                <td>57</td>
+                <td>30cm Green Sparklers</td>
+                <td class="tamil-name">30cm கிரீன் ஸ்பார்க்ளர்ஸ்</td>
+                <td>1 Box</td>
+                <td>60</td>
+                <td><input type="number" min="0" value="0" onchange="calculateAmount(this)"></td>
+                <td class="amount">0</td>
+            </tr>
+            <tr>
+                <td>58</td>
+                <td>30cm Red Sparklers</td>
+                <td class="tamil-name">30cm ரெட் ஸ்பார்க்ளர்ஸ்</td>
+                <td>1 Box</td>
+                <td>65</td>
+                <td><input type="number" min="0" value="0" onchange="calculateAmount(this)"></td>
+                <td class="amount">0</td>
+            </tr>
+            <tr>
+                <td>59</td>
+                <td>50cm Electric Sparklers Tube</td>
+                <td class="tamil-name">50cm எலக்ட்ரிக் ஸ்பார்க்ளர்ஸ்</td>
+                <td>1 Box</td>
+                <td>170</td>
+                <td><input type="number" min="0" value="0" onchange="calculateAmount(this)"></td>
+                <td class="amount">0</td>
+            </tr>
+            <tr>
+                <td>60</td>
+                <td>50cm Colour Sparklers Tube</td>
+                <td class="tamil-name">50cm கலர் ஸ்பார்க்ளர்ஸ்</td>
+                <td>1 Box</td>
+                <td>200</td>
+                <td><input type="number" min="0" value="0" onchange="calculateAmount(this)"></td>
+                <td class="amount">0</td>
+            </tr>
+            </tr>
+            <th>🔥🔥</th>
+            <th>REPEATING SHOTS</th>
+            <th class="tamil-name">ரிப்பீட்டிங் ஷாட்ஸ்</th>
+            <th>🔥🔥</th>
+            <th>  </th>
+            <th>  </th>
+            <th>  </th>
+            </tr>
+
+            <tr>
+                <td>61</td>
+                <td>12 Shot</td>
+                <td class="tamil-name">12 ஷாட்</td>
+                <td>1 Box</td>
+                <td>150</td>
+                <td><input type="number" min="0" value="0" onchange="calculateAmount(this)"></td>
+                <td class="amount">0</td>
+            </tr>
+            <tr>
+                <td>62</td>
+                <td>30 Shot</td>
+                <td class="tamil-name">30 ஷாட்</td>
+                <td>1 Box</td>
+                <td>400</td>
+                <td><input type="number" min="0" value="0" onchange="calculateAmount(this)"></td>
+                <td class="amount">0</td>
+            </tr>
+            <tr>
+                <td>63</td>
+                <td>60 Shot Multi Colour</td>
+                <td class="tamil-name">60 ஷாட் மல்டி கலர்</td>
+                <td>1 Box</td>
+                <td>800</td>
+                <td><input type="number" min="0" value="0" onchange="calculateAmount(this)"></td>
+                <td class="amount">0</td>
+            </tr>
+            <tr>
+                <td>64</td>
+                <td>120 Shot</td>
+                <td class="tamil-name">120 ஷாட்</td>
+                <td>1 Box</td>
+                <td>1600</td>
+                <td><input type="number" min="0" value="0" onchange="calculateAmount(this)"></td>
+                <td class="amount">0</td>
+            </tr>
+            <tr>
+                <td>65</td>
+                <td>240 Shot</td>
+                <td class="tamil-name">240 ஷாட்</td>
+                <td>1 Box</td>
+                <td>3200</td>
+                <td><input type="number" min="0" value="0" onchange="calculateAmount(this)"></td>
+                <td class="amount">0</td>
+            </tr>
+            </tr>
+            <th>🔥🔥</th>
+            <th>SINGLE COLOUR SHOT</th>
+            <th class="tamil-name">சிங்கிள் கலர் ஷாட்</th>
+            <th>🔥🔥</th>
+            <th>  </th>
+            <th>  </th>
+            <th>  </th>
+            </tr>
+
+            <tr>
+                <td>66</td>
+                <td>Chotta Fancy</td>
+                <td class="tamil-name">சோட்டா பேன்சி</td>
+                <td>1 Box</td>
+                <td>40</td>
+                <td><input type="number" min="0" value="0" onchange="calculateAmount(this)"></td>
+                <td class="amount">0</td>
+            </tr>
+            <tr>
+                <td>67</td>
+                <td>1 3/4" Fancy (3 Pcs)</td>
+                <td class="tamil-name">1 3/4" ஃபேன்ஸி (3)</td>
+                <td>1 Box</td>
+                <td>230</td>
+                <td><input type="number" min="0" value="0" onchange="calculateAmount(this)"></td>
+                <td class="amount">0</td>
+            </tr>
+            <tr>
+                <td>68</td>
+                <td>2" Fancy (1 Pce)</td>
+                <td class="tamil-name">2" ஃபேன்ஸி (1)</td>
+                <td>1 Box</td>
+                <td>120</td>
+                <td><input type="number" min="0" value="0" onchange="calculateAmount(this)"></td>
+                <td class="amount">0</td>
+            </tr>
+            <tr>
+                <td>69</td>
+                <td>3 1/2" Fancy (1 Pce)</td>
+                <td class="tamil-name">3 1/2" ஃபேன்ஸி (1)</td>
+                <td>1 Box</td>
+                <td>300</td>
+                <td><input type="number" min="0" value="0" onchange="calculateAmount(this)"></td>
+                <td class="amount">0</td>
+            </tr>
+            <tr>
+                <td>70</td>
+                <td>4" Fancy (2 Pcs)</td>
+                <td class="tamil-name">4" ஃபேன்ஸி (2)</td>
+                <td>1 Box</td>
+                <td>660</td>
+                <td><input type="number" min="0" value="0" onchange="calculateAmount(this)"></td>
+                <td class="amount">0</td>
+            </tr>
+            </tr>
+            <th>🔥🔥</th>
+            <th>SPECIAL ITEMS</th>
+            <th class="tamil-name">ஸ்பெஷல் ஐயிட்டம்</th>
+            <th>🔥🔥</th>
+            <th>  </th>
+            <th>  </th>
+            <th>  </th>
+            </tr>
+
+            <tr>
+                <td>71</td>
+                <td>Pambaram</td>
+                <td class="tamil-name">பம்பரம்</td>
+                <td>1 Box</td>
+                <td>90</td>
+                <td><input type="number" min="0" value="0" onchange="calculateAmount(this)"></td>
+                <td class="amount">0</td>
+            </tr>
+            <tr>
+                <td>72</td>
+                <td>Disco Shower</td>
+                <td class="tamil-name">டிஸ்கோ சவர்</td>
+                <td>1 Box</td>
+                <td>95</td>
+                <td><input type="number" min="0" value="0" onchange="calculateAmount(this)"></td>
+                <td class="amount">0</td>
+            </tr>
+            <tr>
+                <td>73</td>
+                <td>Siren (3 Pcs)</td>
+                <td class="tamil-name">சைரன் (5 பீஸ்!)</td>
+                <td>1 Box</td>
+                <td>155</td>
+                <td><input type="number" min="0" value="0" onchange="calculateAmount(this)"></td>
+                <td class="amount">0</td>
+            </tr>
+            <tr>
+                <td>74</td>
+                <td>Butterfly</td>
+                <td class="tamil-name">பட்டர்ப்ளை</td>
+                <td>1 Box</td>
+                <td>85</td>
+                <td><input type="number" min="0" value="0" onchange="calculateAmount(this)"></td>
+                <td class="amount">0</td>
+            </tr>
+            <tr>
+                <td>75</td>
+                <td>Helicopter</td>
+                <td class="tamil-name">ஹெலிகாப்டர்</td>
+                <td>1 Box</td>
+                <td>90</td>
+                <td><input type="number" min="0" value="0" onchange="calculateAmount(this)"></td>
+                <td class="amount">0</td>
+            </tr>
+            <tr>
+                <td>76</td>
+                <td>Drone</td>
+                <td class="tamil-name">ட்ரோன்</td>
+                <td>1 Box</td>
+                <td>130</td>
+                <td><input type="number" min="0" value="0" onchange="calculateAmount(this)"></td>
+                <td class="amount">0</td>
+            </tr>
+            <tr>
+                <td>77</td>
+                <td>Rainbow Smoke</td>
+                <td class="tamil-name">ரெயின்போ ஸ்மோக்</td>
+                <td>1 Box</td>
+                <td>155</td>
+                <td><input type="number" min="0" value="0" onchange="calculateAmount(this)"></td>
+                <td class="amount">0</td>
+            </tr>
+            <tr>
+                <td>78</td>
+                <td>Peacock</td>
+                <td class="tamil-name">பீக்காக்</td>
+                <td>1 Box</td>
+                <td>165</td>
+                <td><input type="number" min="0" value="0" onchange="calculateAmount(this)"></td>
+                <td class="amount">0</td>
+            </tr>
+            <tr>
+                <td>79</td>
+                <td>Electric Stone</td>
+                <td class="tamil-name">எலக்ட்ரிக் ஸ்டோன்</td>
+                <td>1 Box</td>
+                <td>15</td>
+                <td><input type="number" min="0" value="0" onchange="calculateAmount(this)"></td>
+                <td class="amount">0</td>
+            </tr>
+            <tr>
+                <td>80</td>
+                <td>Magic Show (Currency Paper)</td>
+                <td class="tamil-name">மேஜிக் ஷோ (கரன்சி)</td>
+                <td>1 Box</td>
+                <td>200</td>
+                <td><input type="number" min="0" value="0" onchange="calculateAmount(this)"></td>
+                <td class="amount">0</td>
+            </tr>
+            <tr>
+                <td>81</td>
+                <td>Roll Cap</td>
+                <td class="tamil-name">ரோல் கேப்</td>
+                <td>1 Box</td>
+                <td>70</td>
+                <td><input type="number" min="0" value="0" onchange="calculateAmount(this)"></td>
+                <td class="amount">0</td>
+            </tr>
+            <tr>
+                <td>82</td>
+                <td>Black Serpent</td>
+                <td class="tamil-name">பாம்பு மாத்திரை</td>
+                <td>5 Box</td>
+                <td>35</td>
+                <td><input type="number" min="0" value="0" onchange="calculateAmount(this)"></td>
+                <td class="amount">0</td>
+            </tr>
+            <tr>
+                <td>83</td>
+                <td>Chittu Puttu</td>
+                <td class="tamil-name">சிட்டு புட்டு</td>
+                <td>1 Box</td>
+                <td>35</td>
+                <td><input type="number" min="0" value="0" onchange="calculateAmount(this)"></td>
+                <td class="amount">0</td>
+            </tr>
+
+            <tr>
+                <td>84</td>
+                <td>Selfie Stick</td>
+                <td class="tamil-name">செல்ஃபி ஸ்டிக்</td>
+                <td>1 Box</td>
+                <td>110</td>
+                <td><input type="number" min="0" value="0" onchange="calculateAmount(this)"></td>
+                <td class="amount">0</td>
+            </tr>
+            <tr>
+                <td>85</td>
+                <td>Photo Flash</td>
+                <td class="tamil-name">போட்டோ பிளாஷ்</td>
+                <td>1 Box</td>
+                <td>70</td>
+                <td><input type="number" min="0" value="0" onchange="calculateAmount(this)"></td>
+                <td class="amount">0</td>
+            </tr>
+            <tr>
+                <td>86</td>
+                <td>Penta</td>
+                <td class="tamil-name">பெண்டா</td>
+                <td>1 Box</td>
+                <td>135</td>
+                <td><input type="number" min="0" value="0" onchange="calculateAmount(this)"></td>
+                <td class="amount">0</td>
+            </tr>
+            <tr>
+                <td>87</td>
+                <td>Water Queen</td>
+                <td class="tamil-name">செல்ஃபி ஸ்டிக்</td>
+                <td>1 Box</td>
+                <td>135</td>
+                <td><input type="number" min="0" value="0" onchange="calculateAmount(this)"></td>
+                <td class="amount">0</td>
+            </tr>
+            <tr>
+                <td>88</td>
+                <td>Lolly Pop</td>
+                <td class="tamil-name">லாலி பாப்</td>
+                <td>1 Box</td>
+                <td>250</td>
+                <td><input type="number" min="0" value="0" onchange="calculateAmount(this)"></td>
+                <td class="amount">0</td>
+            </tr>
+            <tr>
+                <td>89</td>
+                <td>Tin 3 Varieties</td>
+                <td class="tamil-name">டின் 3 வகைகள்</td>
+                <td>1 Pce</td>
+                <td>100</td>
+                <td><input type="number" min="0" value="0" onchange="calculateAmount(this)"></td>
+                <td class="amount">0</td>
+            </tr>
+            <tr>
+                <td>90</td>
+                <td>4 x 4 Wheel (5 Pcs)</td>
+                <td class="tamil-name">4x4 வீல் (5)</td>
+                <td>1 Pce</td>
+                <td>160</td>
+                <td><input type="number" min="0" value="0" onchange="calculateAmount(this)"></td>
+                <td class="amount">0</td>
+            </tr>
+            <tr>
+                <td>91</td>
+                <td>Peacock Feathers (5 Pcs)</td>
+                <td class="tamil-name">பீக்காக் பெதர்ஸ்</td>
+                <td>1 Pce</td>
+                <td>95</td>
+                <td><input type="number" min="0" value="0" onchange="calculateAmount(this)"></td>
+                <td class="amount">0</td>
+            </tr>
+            <tr>
+                <td>92</td>
+                <td>Golden Rain (5 Pcs)</td>
+                <td class="tamil-name">கோல்டன் ரெய்ன்</td>
+                <td>1 Box</td>
+                <td>95</td>
+                <td><input type="number" min="0" value="0" onchange="calculateAmount(this)"></td>
+                <td class="amount">0</td>
+            </tr>
+            <tr>
+                <td>93</td>
+                <td>Touch Me Falls</td>
+                <td class="tamil-name">டச் மீ பால்ஸ்</td>
+                <td>1 Box</td>
+                <td>140</td>
+                <td><input type="number" min="0" value="0" onchange="calculateAmount(this)"></td>
+                <td class="amount">0</td>
+            </tr>
+            <tr>
+                <td>94</td>
+                <td>Mini Siren</td>
+                <td class="tamil-name">மினி சைரன்</td>
+                <td>1 Box</td>
+                <td>120</td>
+                <td><input type="number" min="0" value="0" onchange="calculateAmount(this)"></td>
+                <td class="amount">0</td>
+            </tr>
+            <tr>
+                <td>95</td>
+                <td>Bat Ball</td>
+                <td class="tamil-name">பேட் பால்</td>
+                <td>1 Box</td>
+                <td>250</td>
+                <td><input type="number" min="0" value="0" onchange="calculateAmount(this)"></td>
+                <td class="amount">0</td>
+            </tr>
+            <tr>
+                <td>96</td>
+                <td>Old Is Gold</td>
+                <td class="tamil-name">ஓல்டு இஸ் கோல்டு</td>
+                <td>1 Box</td>
+                <td>200</td>
+                <td><input type="number" min="0" value="0" onchange="calculateAmount(this)"></td>
+                <td class="amount">0</td>
+            </tr>
+            <tr>
+                <td>97</td>
+                <td>Money Bank</td>
+                <td class="tamil-name">மணி பேங்க்</td>
+                <td>1 Box</td>
+                <td>150</td>
+                <td><input type="number" min="0" value="0" onchange="calculateAmount(this)"></td>
+                <td class="amount">0</td>
+            </tr>
+            </tr>
+            <th>🔥🔥</th>
+            <th>COLOUR MATCHES</th>
+            <th class="tamil-name">கலர் மேட்சஸ்</th>
+            <th>🔥🔥</th>
+            <th>  </th>
+            <th>  </th>
+            <th>  </th>
+            </tr>
+       
+            <tr>
+                <td>98</td>
+                <td>Sachin</td>
+                <td class="tamil-name">சச்சின்</td>
+                <td>10 Box</td>
+                <td>60</td>
+                <td><input type="number" min="0" value="0" onchange="calculateAmount(this)"></td>
+                <td class="amount">0</td>
+            </tr>
+            <tr>
+                <td>99</td>
+                <td>Lion</td>
+                <td class="tamil-name">லயன்</td>
+                <td>10 Box</td>
+                <td>120</td>
+                <td><input type="number" min="0" value="0" onchange="calculateAmount(this)"></td>
+                <td class="amount">0</td>
+            </tr>
+            <tr>
+                <td>100</td>
+                <td>Royal</td>
+                <td class="tamil-name">ராயல்</td>
+                <td>10 Box</td>
+                <td>150</td>
+                <td><input type="number" min="0" value="0" onchange="calculateAmount(this)"></td>
+                <td class="amount">0</td>
+            </tr>
+            </tr>
+            <th>🔥🔥</th>
+            <th>GIFT BOX</th>
+            <th class="tamil-name">கிப்ட் பாக்ஸ்</th>
+            <th>🔥🔥</th>
+            <th>  </th>
+            <th>  </th>
+            <th>  </th>
+            </tr>
+        
+            <tr>
+                <td>101</td>
+                <td>22 Items</td>
+                <td class="tamil-name">22 வகைகள்</td>
+                <td>1 Box</td>
+                <td></td>
+                <td><input type="number" min="0" value="0" onchange="calculateAmount(this)"></td>
+                <td class="amount">0</td>
+            </tr>
+            <tr>
+                <td>102</td>
+                <td>27 Items</td>
+                <td class="tamil-name">27 வகைகள்</td>
+                <td>1 Box</td>
+                <td></td>
+                <td><input type="number" min="0" value="0" onchange="calculateAmount(this)"></td>
+                <td class="amount">0</td>
+            </tr>
+            <tr>
+                <td>103</td>
+                <td>30 Items</td>
+                <td class="tamil-name">30 வகைகள்</td>
+                <td>1 Box</td>
+                <td></td>
+                <td><input type="number" min="0" value="0" onchange="calculateAmount(this)"></td>
+                <td class="amount">0</td>
+            </tr>
+            <tr>
+                <td>104</td>
+                <td>36 Items</td>
+                <td class="tamil-name">36 வகைகள்</td>
+                <td>1 Box</td>
+                <td></td>
+                <td><input type="number" min="0" value="0" onchange="calculateAmount(this)"></td>
+                <td class="amount">0</td>
+            </tr>
+            <tr>
+                <td>105</td>
+                <td>45 Items</td>
+                <td class="tamil-name">45 வகைகள்</td>
+                <td>1 Box</td>
+                <td></td>
+                <td><input type="number" min="0" value="0" onchange="calculateAmount(this)"></td>
+                <td class="amount">0</td>
+            </tr>
+                       
+            <tr class="total-row">
+                <td colspan="6" style="text-align: right;">Total</td>
+                <td id="grandTotal">0</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script>
+        function calculateAmount(element) {
+            // Get the row of the input field
+            const row = element.closest('tr');
+            // Get the net rate from the row
+            const netRate = parseFloat(row.cells[4].innerText);
+            // Get the quantity from the input field
+            const quantity = parseInt(element.value);
+            // Calculate the amount
+            const amount = netRate * quantity;
+            // Set the calculated amount in the row
+            row.cells[6].innerText = amount.toFixed(2);
+            // Update the total amount
+            updateTotal();
+        }
+
+        function updateTotal() {
+            let grandTotal = 0;
+            // Get all the amount cells
+            const amounts = document.querySelectorAll('.amount');
+            // Sum all the amounts
+            amounts.forEach(amount => {
+                grandTotal += parseFloat(amount.innerText);
+            });
+            // Set the total amount
+            document.getElementById('grandTotal').innerText = grandTotal.toFixed(2);
+        }
+    </script>
+
+</body>
+</html>
