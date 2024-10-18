@@ -208,12 +208,18 @@
             { id: 99, name: 'Lion', tamilName: '', per: "10 Box", rate: 120 },
             { id: 100, name: 'Royal', tamilName: '', per: "10 Box", rate: 150 },
             
+            // Waalas
+            { id: 101, name: '1K Half Count', tamilName: '1K பாதி எண்ணிக்கை', per: "1 Box", rate: 220 },
+            { id: 102, name: '1K full Count', tamilName: '1K முழு எண்ணிக்கை', per: "1 Box", rate: 300 },
+            { id: 103, name: '2K full Count', tamilName: '2K முழு எண்ணிக்கை', per: "1 Box", rate: 650 },
+            { id: 104, name: '5K full Count', tamilName: '5K முழு எண்ணிக்கை', per: "1 Box", rate: 1500 },
+           
             // Gift Box
-            { id: 101, name: '22 Items', tamilName: '22 வகைகள்', per: "1 Box", rate: 0 },
-            { id: 102, name: '27 Items', tamilName: '27 வகைகள்', per: "1 Box", rate: 0 },
-            { id: 103, name: '30 Items', tamilName: '30 வகைகள்', per: "1 Box", rate: 0 },
-            { id: 104, name: '36 Items', tamilName: '36 வகைகள்', per: "1 Box", rate: 0 },
-            { id: 105, name: '45 Items', tamilName: '45 வகைகள்', per: "1 Box", rate: 0 }
+            { id: 105, name: '22 Items', tamilName: '22 வகைகள்', per: "1 Box", rate: 0 },
+            { id: 106, name: '27 Items', tamilName: '27 வகைகள்', per: "1 Box", rate: 0 },
+            { id: 107, name: '30 Items', tamilName: '30 வகைகள்', per: "1 Box", rate: 0 },
+            { id: 108, name: '36 Items', tamilName: '36 வகைகள்', per: "1 Box", rate: 0 },
+            { id: 109, name: '45 Items', tamilName: '45 வகைகள்', per: "1 Box", rate: 0 }
         ];
         const title = `
                 <thead>
@@ -298,7 +304,8 @@
             const singleColourShotProducts = products.filter(product => product.id >= 66 && product.id <= 70);
             const specialItemsProducts = products.filter(product => product.id >= 71 && product.id <= 97);
             const colourMatchesProducts = products.filter(product => product.id >= 98 && product.id <= 100);
-            const giftBoxProducts = products.filter(product => product.id >= 101 && product.id <= 105);
+            const WaalasProducts = products.filter(product => product.id >= 101 && product.id <= 104);
+            const giftBoxProducts = products.filter(product => product.id >= 105 && product.id <= 109);
 
             
             const flashLightTable = generateProductTable(flashLightCrackers, "Flash Light Crackers", "ஃப்ளாஷ் லைட் பட்டாசுகள்");
@@ -314,12 +321,13 @@
             const singleColourShotTable = generateProductTable(singleColourShotProducts, "SINGLE COLOUR SHOT", "சிங்கிள் கலர் ஷாட்");
             const specialItemsTable = generateProductTable(specialItemsProducts, "SPECIAL ITEMS", "ஸ்பெஷல் ஐயிட்டம்");
             const colourMatchesTable = generateProductTable(colourMatchesProducts, "COLOUR MATCHES", "கலர் மேட்சஸ்");
+            const WaalasTable = generateProductTable(WaalasProducts, "WAALAS", "வாலாஸ்");
             const giftBoxTable = generateProductTable(giftBoxProducts, "GIFT BOX", "கிப்ட் பாக்ஸ்");
 
             
 
             document.getElementById("productTable").innerHTML =
-            title + flashLightTable + groundChakkarTable + flowerPotsTable + twinklingStarTable + pencilTable + bijiliCrackerTable + bombTable + rocketTable + sparklerTable + repeatingShotTable + singleColourShotTable + specialItemsTable + colourMatchesTable + giftBoxTable + Total;
+            title + flashLightTable + groundChakkarTable + flowerPotsTable + twinklingStarTable + pencilTable + bijiliCrackerTable + bombTable + rocketTable + sparklerTable + repeatingShotTable + singleColourShotTable + specialItemsTable + colourMatchesTable + WaalasTable + giftBoxTable + Total;
         };
     </script>
 </head>
